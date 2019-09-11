@@ -100,9 +100,8 @@
             <span v-else-if="column.slotName">
               <slot :name="column.slotName" :row="scope.row" :$index="scope.$index" />
             </span>
-            <span v-else-if="column.render">
-              {{ column.render(scope.row) }}
-            </span>
+            <div v-else-if="column.render" v-html="column.render(scope.row)">
+            </div>
             <span v-else-if="column.formatter">
               {{ column.formatter(scope.row, scope.column, scope.row[column.prop], scope.$index) }}
             </span>
