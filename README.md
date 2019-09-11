@@ -151,6 +151,14 @@ And the Test page is the image above.
 </script>
 ```
 
+## Options
+
+### Added column's options
+
+- **render** [ function(row) ] - prepare row field value before render. Returned value will shown as a text
+- **renderHtml** [ function(row) ] - prepare row field value before render. Returned value will shown as an html
+- **renderCompiled** [ function(row) ] - prepare row field value before render. Returned value will shown as a Vue component (need to return Vue.compile('Some-vue-template-value'))
+
 ## LICENSE
 
 MIT
