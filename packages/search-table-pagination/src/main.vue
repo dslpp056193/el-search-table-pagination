@@ -190,8 +190,6 @@
 
         if (total % pageSize > 0) latestPage += 1;
 
-        latestPage = latestPage - 1; // must start from 0
-
         this.handleCurrentChange(latestPage)
         this.dataChangeHandler()
       },
