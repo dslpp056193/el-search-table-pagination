@@ -184,7 +184,13 @@
         this.dataChangeHandler()
       },
       openLatestPage() {
-        this.handleCurrentChange(this.total)
+        let total = this.total,
+          pageSize = this.pagination.pageSize,
+          latestPage = (total - (total % pageSize)) / pageSize;
+
+        if (total % pageSize > 0) latestPage += 1;
+
+        this.handleCurrentChange(latestPage)
         this.dataChangeHandler()
       },
       searchHandler(resetPageIndex = true) {
