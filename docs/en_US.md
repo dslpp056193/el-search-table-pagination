@@ -96,6 +96,8 @@ submitHandler | function to hander click event of submit button, the will receiv
 
 | Method Name | Description | Parameters |
 | ----- |-----|-----|
+| handleSizeChange | Set page size | size: integer |
+| handleCurrentChange | Set current page | pageIndex: integer |
 | searchHandler | Research, and default reset page index to 1, set false to prevent resetting page index | resetPageIndex: boolean |
 
 ## Slots
