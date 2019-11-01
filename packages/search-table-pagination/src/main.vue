@@ -183,6 +183,10 @@
         this.pagination.pageIndex = pageIndex
         this.dataChangeHandler()
       },
+      openLatestPage() {
+        this.handleCurrentChange(this.total)
+        this.dataChangeHandler()
+      },
       searchHandler(resetPageIndex = true) {
         if (resetPageIndex) {
           this.pagination.pageIndex = 1
