@@ -21,7 +21,7 @@
 ## Install
 
 ```
-$ npm i --save el-search-table-pagination
+$ npm i --save medzhidov/el-search-table-pagination
 ```
 
 ## Demos
