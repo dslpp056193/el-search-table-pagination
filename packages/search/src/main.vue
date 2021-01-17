@@ -49,12 +49,14 @@
     <el-form-item label="">
       <el-button
         type="primary"
+        plain
         :size="size"
         @click="searchHandler"
         :loading="submitLoading">
         {{ submitBtnText }}
       </el-button>
-      <el-button type="primary" :plain="true"
+      <el-button type="primary"
+        plain
         :size="size" v-if="showResetBtn"
         @click="resetForm"
         :loading="submitLoading">
